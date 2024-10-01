@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'DryBrush';
+  src: url('./fonts/DryBrush.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Please';
+  src: url('./fonts/PleaseWriteMeASong.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --firstColor: #95869e;
+  --secondColor: #6b3f52;
+  --thirdColor: #dfc3aa;
+  --fourthColor: #965773;
+  --fifthColor : #422827;
+  --sixthColor : #dd94bc;
+  --titleFont: "DryBrush", Arial, Helvetica, sans-serif;
+  --baseFont : "Please", Arial, Helvetica, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--fifthColor);
+  background: var(--thirdColor);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2{
+  font-family: var(--titleFont);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
