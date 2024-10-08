@@ -14,6 +14,12 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Kalufonia';
+  src: url('./fonts/Kalufonia-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --firstColor: #95869e;
@@ -22,7 +28,7 @@
   --fourthColor: #965773;
   --fifthColor : #422827;
   --sixthColor : #dd94bc;
-  --titleFont: "DryBrush", Arial, Helvetica, sans-serif;
+  --titleFont: "Kalufonia", Arial, Helvetica, sans-serif;
   --baseFont : "Please", Arial, Helvetica, sans-serif;
 }
 
